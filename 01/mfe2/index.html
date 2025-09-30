@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="microfrontend" id="mfe2">
+        <h2>Microfrontend 2</h2>
+        <p>It's the second microfrontend application with a counter</p>
+
+        <div class="content-section">
+            <h3>Counter example</h3>
+            <div class="counter-section">
+                <p>Current count: <span id="counter">0</span></p>
+                <button id="increment">Increment</button>
+                <button id="decrement">Decrement</button>
+                <button id="broadcast">Broadcast count</button>
+            </div>
+        </div>
+
+        <div class="action-section">
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
+
+        <div id="messages" class="message-section">
+            <h3>Messages</h3>
+            <div class="message-list"></div>
+        </div>
+    </div>
+
+    <script src="js/event-bus.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

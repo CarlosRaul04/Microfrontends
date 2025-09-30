@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="microfrontend" id="mf3">
+        <h2>Microfrontend 3</h2>
+        <p>It's the third microfrontend application with a todo list</p>
+
+    <div class="content-section">
+        <h3>Example</h3>
+        <div class="todo-section">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a new todo" required />
+                <button type="submit">Add Todo</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+
+    <div class="todo-section">
+        <button id="theme-toggle">Toggle theme</button>
+        <button id="share-todos">Share Todos</button>
+    </div>
+
+    <div id="messages" class="message-section">
+        <h3>Messages</h3>
+        <div class="message-list"></div>
+    </div>
+</div>
+
+    <script src="js/event-bus.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
