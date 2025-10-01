@@ -1,0 +1,25 @@
+{
+  "name": "microfrontends",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "biome-check": "biome check",
+    "biome-fix": "biome check . --write --unsafe",
+    "format-and-lint": "turbo run biome_check",
+    "format-and-lint:fix": "turbo run biome_fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "packageManager": "npm@10.9.0",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "turbo": "^2.5.8"
+  }
+}

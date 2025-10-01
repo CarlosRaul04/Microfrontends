@@ -1,0 +1,12 @@
+{
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		},
+        "//#biome_check": {},
+        "//#biome_fix": {
+            "cache": false
+        }
+	}
+}
