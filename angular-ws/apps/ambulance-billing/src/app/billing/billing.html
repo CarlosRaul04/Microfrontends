@@ -1,0 +1,248 @@
+<div class="billing-container">
+    <!-- Header -->
+    <header class="billing-header">
+        <div class="header-content">
+            <div class="navigation-section">
+                <button class="back-btn" onclick="window.history.back()" title="Volver al Menú Principal">
+                    <span class="back-icon">←</span>
+                    <span class="back-text">Menú Principal</span>
+                </button>
+            </div>
+            <div class="title-section">
+                <div class="title-icon">📄</div>
+                <div class="title-text">
+                    <h1>Facturación</h1>
+                    <span>Atenciones Médicas por Facturar</span>
+                </div>
+            </div>
+            <div class="info-section">
+                <span class="total-pending">Total Pendiente: S/ 12,850.00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <h2 class="filters-title">Filtros de Búsqueda</h2>
+
+            <div class="filters-grid">
+                <!-- Date Range Filter -->
+                <div class="filter-group">
+                    <label class="filter-label">Rango de Fechas</label>
+                    <div class="date-range">
+                        <input type="date" class="date-input" id="startDate" value="2025-01-01">
+                        <span class="date-separator">hasta</span>
+                        <input type="date" class="date-input" id="endDate" value="2025-06-29">
+                    </div>
+                </div>
+
+                <!-- Insurance Company Filter -->
+                <div class="filter-group">
+                    <label class="filter-label" for="insuranceSelect">Compañía de Seguro</label>
+                    <select class="insurance-select" id="insuranceSelect">
+                        <option value="">Todas las compañías</option>
+                        <option value="rimac">Rimac Seguros</option>
+                        <option value="pacifico">Pacífico Seguros</option>
+                        <option value="mapfre">MAPFRE</option>
+                        <option value="la-positiva">La Positiva</option>
+                        <option value="interseguro">Interseguro</option>
+                        <option value="particular">Paciente Particular</option>
+                    </select>
+                </div>
+
+                <!-- Search Actions -->
+                <div class="filter-actions">
+                    <button class="filter-btn search-btn">
+                        <span class="btn-icon">🔍</span>
+                        Buscar
+                    </button>
+                    <button class="filter-btn clear-btn">
+                        <span class="btn-icon">🗑️</span>
+                        Limpiar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="results-container">
+            <div class="results-header">
+                <h2 class="results-title">Atenciones por Facturar</h2>
+                <div class="results-stats">
+                    <span class="results-count">23 atenciones encontradas</span>
+                    <button class="export-btn">
+                        <span class="btn-icon">📊</span>
+                        Exportar Excel
+                    </button>
+                </div>
+            </div>
+
+            <!-- Medical Attentions Table -->
+            <div class="table-container">
+                <table class="attentions-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nº Atención</th>
+                            <th>Fecha</th>
+                            <th>Paciente</th>
+                            <th>Dirección</th>
+                            <th>Médico</th>
+                            <th>Monto (S/)</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row">
+                            <td class="cell-id">001</td>
+                            <td class="cell-attention">AMB-2025-0001</td>
+                            <td class="cell-date">15/01/2025</td>
+                            <td class="cell-patient">María González Pérez</td>
+                            <td class="cell-address">Av. Arequipa 1245, Miraflores</td>
+                            <td class="cell-doctor">Dr. Carlos Mendoza</td>
+                            <td class="cell-amount">S/ 450.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">002</td>
+                            <td class="cell-attention">AMB-2025-0002</td>
+                            <td class="cell-date">16/01/2025</td>
+                            <td class="cell-patient">José Luis Ramírez</td>
+                            <td class="cell-address">Jr. Lampa 567, Cercado de Lima</td>
+                            <td class="cell-doctor">Dr. Ana Rodríguez</td>
+                            <td class="cell-amount">S/ 680.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">003</td>
+                            <td class="cell-attention">AMB-2025-0003</td>
+                            <td class="cell-date">18/01/2025</td>
+                            <td class="cell-patient">Carmen Silva Vásquez</td>
+                            <td class="cell-address">Av. Brasil 890, Magdalena</td>
+                            <td class="cell-doctor">Dr. Miguel Torres</td>
+                            <td class="cell-amount">S/ 320.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">004</td>
+                            <td class="cell-attention">AMB-2025-0004</td>
+                            <td class="cell-date">20/01/2025</td>
+                            <td class="cell-patient">Roberto Fernández Castro</td>
+                            <td class="cell-address">Av. Javier Prado 2341, San Isidro</td>
+                            <td class="cell-doctor">Dr. Patricia López</td>
+                            <td class="cell-amount">S/ 890.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">005</td>
+                            <td class="cell-attention">AMB-2025-0005</td>
+                            <td class="cell-date">22/01/2025</td>
+                            <td class="cell-patient">Elena Morales Díaz</td>
+                            <td class="cell-address">Jr. Camaná 123, Callao</td>
+                            <td class="cell-doctor">Dr. Fernando Gómez</td>
+                            <td class="cell-amount">S/ 560.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">006</td>
+                            <td class="cell-attention">AMB-2025-0006</td>
+                            <td class="cell-date">25/01/2025</td>
+                            <td class="cell-patient">Alberto Sánchez Ruiz</td>
+                            <td class="cell-address">Av. Colonial 456, Pueblo Libre</td>
+                            <td class="cell-doctor">Dr. Lucía Herrera</td>
+                            <td class="cell-amount">S/ 720.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">007</td>
+                            <td class="cell-attention">AMB-2025-0007</td>
+                            <td class="cell-date">28/01/2025</td>
+                            <td class="cell-patient">Rosa Jiménez Flores</td>
+                            <td class="cell-address">Av. Universitaria 789, Los Olivos</td>
+                            <td class="cell-doctor">Dr. Ricardo Vargas</td>
+                            <td class="cell-amount">S/ 480.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">008</td>
+                            <td class="cell-attention">AMB-2025-0008</td>
+                            <td class="cell-date">30/01/2025</td>
+                            <td class="cell-patient">Manuel Castro Quispe</td>
+                            <td class="cell-address">Jr. Huancavelica 234, Comas</td>
+                            <td class="cell-doctor">Dr. Adriana Moreno</td>
+                            <td class="cell-amount">S/ 650.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">009</td>
+                            <td class="cell-attention">AMB-2025-0009</td>
+                            <td class="cell-date">02/02/2025</td>
+                            <td class="cell-patient">Teresa Valdez Chávez</td>
+                            <td class="cell-address">Av. Túpac Amaru 567, Independencia</td>
+                            <td class="cell-doctor">Dr. Jaime Espinoza</td>
+                            <td class="cell-amount">S/ 390.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">010</td>
+                            <td class="cell-attention">AMB-2025-0010</td>
+                            <td class="cell-date">05/02/2025</td>
+                            <td class="cell-patient">Pedro Huamán Ríos</td>
+                            <td class="cell-address">Av. Grau 890, Villa El Salvador</td>
+                            <td class="cell-doctor">Dr. Sofía Delgado</td>
+                            <td class="cell-amount">S/ 820.00</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn invoice-btn" title="Generar Factura">📄</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <div class="pagination-info">
+                    Mostrando 1-10 de 23 registros
+                </div>
+                <div class="pagination-controls">
+                    <button class="pagination-btn" disabled>« Anterior</button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">Siguiente »</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

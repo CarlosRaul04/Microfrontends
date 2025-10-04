@@ -1,0 +1,110 @@
+<div class="container">
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="navigation-section">
+                    <button class="back-btn" onclick="window.history.back()" title="Volver al Menú Principal">
+                        <span class="back-icon">←</span>
+                        <span class="back-text">Menú Principal</span>
+                    </button>
+                </div>
+                <div class="logo-section">
+                    <div class="logo-icon">💰</div>
+                    <div class="logo-text">
+                        <h1>Contabilidad y Finanzas</h1>
+                        <span>Sistema de Gestión Financiera</span>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <span class="welcome-text">Panel de Administración</span>
+                    <div class="user-avatar">👤</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="menu-container">
+                <h2 class="menu-title">Gestión Contable y Financiera</h2>
+                <p class="menu-subtitle">Administre las operaciones financieras del sistema AmbuCare</p>
+
+                <div class="menu-grid">
+                    <!-- Cuentas por Cobrar -->
+                    <div class="menu-card" data-module="receivables">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">Cuentas por Cobrar</h3>
+                        <p class="card-description">Gestión de facturación, cobranzas y estados de cuenta de clientes
+                        </p>
+                        <div class="card-footer">
+                            <button class="access-btn" routerLink="/receivables">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Cuentas por Pagar -->
+                    <div class="menu-card" data-module="payables">
+                        <div class="card-icon">📝</div>
+                        <h3 class="card-title">Cuentas por Pagar</h3>
+                        <p class="card-description">Administración de facturas de proveedores y control de pagos</p>
+                        <div class="card-footer">
+                            <button class="access-btn" routerLink="/payables">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Contabilidad General -->
+                    <div class="menu-card" data-module="general-accounting">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Contabilidad General</h3>
+                        <p class="card-description">Plan de cuentas, asientos contables y mayor general</p>
+                        <div class="card-footer">
+                            <button class="access-btn" routerLink="/general-accounting">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Reportes Financieros -->
+                    <div class="menu-card" data-module="financial-reports">
+                        <div class="card-icon">📈</div>
+                        <h3 class="card-title">Reportes Financieros</h3>
+                        <p class="card-description">Estados financieros, balance general y análisis financiero</p>
+                        <div class="card-footer">
+                            <button class="access-btn" routerLink="/financial-reports">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Análisis y Analytics -->
+                    <div class="menu-card" data-module="analytics">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Análisis Financiero</h3>
+                        <p class="card-description">Indicadores financieros, análisis de tendencias y proyecciones</p>
+                        <div class="card-footer">
+                            <button class="access-btn" routerLink="/analytics">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Configuración Financiera -->
+                    <div class="menu-card system-settings">
+                        <div class="card-icon">⚙️</div>
+                        <h3 class="card-title">Configuración Financiera</h3>
+                        <div class="settings-list">
+                            <button class="setting-btn">Configurar Impuestos</button>
+                            <button class="setting-btn">Períodos Contables</button>
+                            <button class="setting-btn">Tipos de Cambio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 AmbuCare - Módulo de Contabilidad y Finanzas</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Documentación</a>
+                    <a href="#" class="footer-link">Manual de Usuario</a>
+                    <a href="#" class="footer-link">Soporte</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

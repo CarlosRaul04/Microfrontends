@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">🚑</div>
+                    <div class="logo-text">
+                        <h1>AmbuCare</h1>
+                        <span>Sistema Integral de Ambulancias</span>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <span class="welcome-text">Bienvenido, Usuario</span>
+                    <div class="user-avatar">👤</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="menu-container">
+                <h2 class="menu-title">Panel de Control</h2>
+                <p class="menu-subtitle">Seleccione el módulo al que desea acceder</p>
+
+                <div class="menu-grid">
+                    <!-- Accounting Module -->
+                    <div class="menu-card" data-module="accounting" routerLink="/accounting">
+                        <div class="card-icon">💰</div>
+                        <h3 class="card-title">Contabilidad</h3>
+                        <p class="card-description">Gestión financiera, reportes contables y análisis de costos</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Acceder</button>
+                        </div>
+                    </div>
+
+                    <!-- Billing Module -->
+                    <div class="menu-card" data-module="billing" routerLink="/billing">
+                        <div class="card-icon">📄</div>
+                        <h3 class="card-title">Facturación</h3>
+                        <p class="card-description">Emisión de facturas, cobros y seguimiento de pagos</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Acceder</button>
+                        </div>
+                    </div>
+
+                    <!-- Medical Attentions Module -->
+                    <div class="menu-card" data-module="medical-attentions" routerLink="/medical-attentions">
+                        <div class="card-icon">🏥</div>
+                        <h3 class="card-title">Atenciones Médicas</h3>
+                        <p class="card-description">Registro de servicios médicos y seguimiento de pacientes</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Acceder</button>
+                        </div>
+                    </div>
+
+                    <!-- Master Tables Module -->
+                    <div class="menu-card" data-module="master-tables" routerLink="/master-tables">
+                        <div class="card-icon">⚙️</div>
+                        <h3 class="card-title">Tablas Maestras</h3>
+                        <p class="card-description">Configuración del sistema y gestión de datos maestros</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Acceder</button>
+                        </div>
+                    </div>
+
+                    <!-- Store Module -->
+                    <div class="menu-card" data-module="store" routerLink="/store">
+                        <div class="card-icon">🏪</div>
+                        <h3 class="card-title">Almacén</h3>
+                        <p class="card-description">Inventario de medicamentos y equipos médicos</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Acceder</button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions Card -->
+                    <div class="menu-card quick-actions">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Acciones Rápidas</h3>
+                        <div class="quick-actions-list">
+                            <button class="quick-action-btn">Nueva Emergencia</button>
+                            <button class="quick-action-btn">Consultar Paciente</button>
+                            <button class="quick-action-btn">Estado de Flota</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 AmbuCare - Sistema Integral de Ambulancias</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Ayuda</a>
+                    <a href="#" class="footer-link">Contacto</a>
+                    <a href="#" class="footer-link">Soporte Técnico</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
