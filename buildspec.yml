@@ -5,7 +5,7 @@ phases:
       nodejs: 22
   pre-build:
     commands:
-      - edho "Installing depends on"
+      - echo "Installing depends on"
       - cd angular-ws
       - npm ci
       - npm i -g nx
