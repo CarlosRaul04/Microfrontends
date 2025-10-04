@@ -1,0 +1,23 @@
+services:
+  server-mysql:
+    image: mysql:8
+    container_name: server-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 12345
+    ports:
+      - "3360:3306"
+    volumes:
+      - vol-mysql-mfe:/var/lib/mysql
+    networks:
+      - net-mfe
+
+volumes:
+  vol-mysql-mfe:
+    driver: local    
+
+networks:
+  net-mfe:
+    driver: bridge

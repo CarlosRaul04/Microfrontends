@@ -1,0 +1,43 @@
+### Create History
+POST http://localhost:3000/history
+Content-Type: application/json
+
+{
+    "medicName": "Dr. Smith",
+    "paramedicName": "John Doe",
+    "dateAttention": "2025-10-03T10:00:00Z",
+    "sympthoms": "Fever, cough",
+    "observations": "Patient is stable",
+    "medicines": "Paracetamol",
+    "diagnostic": "Flu",
+    "patientId": 2
+}
+
+### Get Histories by Page
+GET http://localhost:3000/history/page?page=1&limit=10
+
+### Get Histories by Patient ID
+GET http://localhost:3000/history/patient/1
+
+### Update History
+PUT http://localhost:3000/history/1
+Content-Type: application/json
+
+{
+    "medicName": "Dr. Jane",
+    "paramedicName": "Jane Doe",
+    "dateAttention": "2025-10-04T10:00:00Z",
+    "sympthoms": "Headache",
+    "observations": "Patient is recovering",
+    "medicines": "Ibuprofen",
+    "diagnostic": "Migraine"
+}
+
+### Delete History
+DELETE http://localhost:3000/history/1
+
+### Get One History
+GET http://localhost:3000/history/1
+
+### Get All Histories
+GET http://localhost:3000/history

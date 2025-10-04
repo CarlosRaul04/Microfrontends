@@ -1,0 +1,10 @@
+{
+    "tasks": {
+        "start": {},
+        "dev": {
+            "dependsOn": [
+                "^dev"
+            ]
+        }
+    }
+}

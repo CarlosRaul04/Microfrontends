@@ -1,0 +1,33 @@
+### Get all
+GET http://localhost:3000/patient
+
+### Post
+POST http://localhost:3000/patient
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 30,
+    "email": "john.doe@email.com",
+    "phoneNumber": "123-456-7890",
+    "address": "123 Main St, Springfield, IL",
+    "gender": "male"
+}
+
+### Get by ID
+GET http://localhost:3000/patient/1
+
+### Update by ID
+PUT http://localhost:3000/patient/1
+Content-type: application/json
+
+{
+    "firstname": "Juan"
+}
+
+### Pagination
+GET http://localhost:3000/patient/page?page=1&limit=10
+
+### Delete
+DELETE http://localhost:3000/patient/1

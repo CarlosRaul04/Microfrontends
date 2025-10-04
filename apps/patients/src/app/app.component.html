@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <li *ngFor="let patient of patients" (click)="selectPatient(patient)" style="cursor: pointer; padding: 10px; border-bottom: 1px solid #ddd;">
+      {{ patient.name }}
+    </li>
+  </ul>
+</div>

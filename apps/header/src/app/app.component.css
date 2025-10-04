@@ -1,0 +1,52 @@
+/* Reset default styles for the unordered list */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #B39DDB, #4B0082); /* Gradient from light purple/blue to dark purple */
+    padding: 15px 0;
+}
+
+/* Style for list items */
+li {
+    margin: 0 10px;
+}
+
+/* Style for links */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px; /* Smaller font size */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px; /* Rounded corners */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Whitish shadow effect */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    font-size: 16px; /* Slightly increase font size on hover */
+}
+
+/* Active link style */
+a.router-link-active {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Fullwidth container */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+}
