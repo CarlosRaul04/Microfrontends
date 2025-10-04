@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ambulance/accounting/*": ["apps/ambulance-accounting/src/app/*"],
+      "@ambulance/billing/*": ["apps/ambulance-billing/src/app/*"],
+      "@ambulance/master-tables/*": ["apps/ambulance-master-tables/src/app/*"],
+      "@ambulance/medical-attentions/*": [
+        "apps/ambulance-medical-attentions/src/app/*"
+      ],
+      "@ambulance/store/*": ["apps/ambulance-store/src/app/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

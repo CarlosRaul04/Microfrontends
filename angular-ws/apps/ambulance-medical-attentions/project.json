@@ -1,0 +1,85 @@
+{
+  "name": "ambulance-medical-attentions",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/ambulance-medical-attentions/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/ambulance-medical-attentions",
+        "browser": "apps/ambulance-medical-attentions/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/ambulance-medical-attentions/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/ambulance-medical-attentions/public"
+          }
+        ],
+        "styles": ["apps/ambulance-medical-attentions/src/styles.css"]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "8kb",
+              "maximumError": "15kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "options": {
+        "port": 4203
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "ambulance-medical-attentions:build:production"
+        },
+        "development": {
+          "buildTarget": "ambulance-medical-attentions:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n",
+      "options": {
+        "buildTarget": "ambulance-medical-attentions:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "ambulance-medical-attentions:build",
+        "port": 4203,
+        "staticFilePath": "dist/apps/ambulance-medical-attentions/browser",
+        "spa": true
+      }
+    }
+  }
+}

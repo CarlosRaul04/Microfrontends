@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="navigation-section">
+                    <button class="back-btn" onclick="window.history.back()" title="Volver al Menú Principal">
+                        <span class="back-icon">←</span>
+                        <span class="back-text">Menú Principal</span>
+                    </button>
+                </div>
+                <div class="logo-section">
+                    <div class="logo-icon">⚙️</div>
+                    <div class="logo-text">
+                        <h1>Tablas Maestras</h1>
+                        <span>Configuración del Sistema</span>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <span class="welcome-text">Panel de Administración</span>
+                    <div class="user-avatar">👤</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="menu-container">
+                <h2 class="menu-title">Gestión de Tablas Maestras</h2>
+                <p class="menu-subtitle">Administre los datos maestros del sistema AmbuCare</p>
+
+                <div class="menu-grid">
+                    <!-- District Module -->
+                    <div class="menu-card" data-module="district" routerLink="/district">
+                        <div class="card-icon">🏘️</div>
+                        <h3 class="card-title">Distritos</h3>
+                        <p class="card-description">Gestión de distritos y zonas de cobertura del servicio</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Medic Module -->
+                    <div class="menu-card" data-module="medic" routerLink="/medic">
+                        <div class="card-icon">👨‍⚕️</div>
+                        <h3 class="card-title">Médicos</h3>
+                        <p class="card-description">Registro y administración de personal médico</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Paramedic Module -->
+                    <div class="menu-card" data-module="paramedic" routerLink="/paramedic">
+                        <div class="card-icon">🚑</div>
+                        <h3 class="card-title">Paramédicos</h3>
+                        <p class="card-description">Gestión de personal paramédico y técnicos de emergencia</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Driver Module -->
+                    <div class="menu-card" data-module="driver" routerLink="/driver">
+                        <div class="card-icon">🚗</div>
+                        <h3 class="card-title">Conductores</h3>
+                        <p class="card-description">Administración de conductores de ambulancias</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- Patient Module -->
+                    <div class="menu-card" data-module="patient" routerLink="/patient">
+                        <div class="card-icon">🏥</div>
+                        <h3 class="card-title">Pacientes</h3>
+                        <p class="card-description">Registro y gestión de información de pacientes</p>
+                        <div class="card-footer">
+                            <button class="access-btn">Gestionar</button>
+                        </div>
+                    </div>
+
+                    <!-- System Settings Card -->
+                    <div class="menu-card system-settings">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Configuración del Sistema</h3>
+                        <div class="settings-list">
+                            <button class="setting-btn">Exportar Datos</button>
+                            <button class="setting-btn">Importar Datos</button>
+                            <button class="setting-btn">Respaldo de BD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 AmbuCare - Tablas Maestras del Sistema</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Documentación</a>
+                    <a href="#" class="footer-link">Manual de Usuario</a>
+                    <a href="#" class="footer-link">Soporte</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

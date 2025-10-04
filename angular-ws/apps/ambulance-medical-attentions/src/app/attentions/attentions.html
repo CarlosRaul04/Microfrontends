@@ -1,0 +1,350 @@
+<div class="attentions-container">
+    <!-- Header -->
+    <header class="attentions-header">
+        <div class="header-content">
+            <div class="navigation-section">
+                <button class="back-btn" onclick="window.history.back()" title="Volver al Menú Principal">
+                    <span class="back-icon">←</span>
+                    <span class="back-text">Menú Principal</span>
+                </button>
+            </div>
+            <div class="title-section">
+                <div class="title-icon">🏥</div>
+                <div class="title-text">
+                    <h1>Atenciones Médicas</h1>
+                    <span>Registro de Servicios Médicos</span>
+                </div>
+            </div>
+            <div class="info-section">
+                <span class="total-attentions">Total: 147 atenciones</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <h2 class="filters-title">Filtros de Búsqueda</h2>
+
+            <div class="filters-grid">
+                <!-- Date Range Filter -->
+                <div class="filter-group">
+                    <label class="filter-label">Rango de Fechas</label>
+                    <div class="date-range">
+                        <input type="date" class="date-input" id="startDate" value="2025-01-01">
+                        <span class="date-separator">hasta</span>
+                        <input type="date" class="date-input" id="endDate" value="2025-06-29">
+                    </div>
+                </div>
+
+                <!-- Insurance Company Filter -->
+                <div class="filter-group">
+                    <label class="filter-label" for="insuranceSelect">Compañía de Seguro</label>
+                    <select class="insurance-select" id="insuranceSelect">
+                        <option value="">Todas las compañías</option>
+                        <option value="rimac">Rimac Seguros</option>
+                        <option value="pacifico">Pacífico Seguros</option>
+                        <option value="mapfre">MAPFRE</option>
+                        <option value="la-positiva">La Positiva</option>
+                        <option value="interseguro">Interseguro</option>
+                        <option value="particular">Paciente Particular</option>
+                        <option value="essalud">EsSalud</option>
+                        <option value="sis">SIS</option>
+                    </select>
+                </div>
+
+                <!-- Search Actions -->
+                <div class="filter-actions">
+                    <button class="filter-btn search-btn">
+                        <span class="btn-icon">🔍</span>
+                        Buscar
+                    </button>
+                    <button class="filter-btn clear-btn">
+                        <span class="btn-icon">🗑️</span>
+                        Limpiar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card emergency">
+                <div class="stat-icon">🚨</div>
+                <div class="stat-info">
+                    <h3>15</h3>
+                    <p>Emergencias</p>
+                </div>
+            </div>
+            <div class="stat-card routine">
+                <div class="stat-icon">📋</div>
+                <div class="stat-info">
+                    <h3>98</h3>
+                    <p>Rutinarias</p>
+                </div>
+            </div>
+            <div class="stat-card completed">
+                <div class="stat-icon">✅</div>
+                <div class="stat-info">
+                    <h3>132</h3>
+                    <p>Completadas</p>
+                </div>
+            </div>
+            <div class="stat-card pending">
+                <div class="stat-icon">⏳</div>
+                <div class="stat-info">
+                    <h3>15</h3>
+                    <p>Pendientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="results-container">
+            <div class="results-header">
+                <h2 class="results-title">Listado de Atenciones Médicas</h2>
+                <div class="results-stats">
+                    <span class="results-count">47 atenciones encontradas</span>
+                    <button class="export-btn">
+                        <span class="btn-icon">📊</span>
+                        Exportar Excel
+                    </button>
+                </div>
+            </div>
+
+            <!-- Medical Attentions Table -->
+            <div class="table-container">
+                <table class="attentions-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nº Atención</th>
+                            <th>Fecha</th>
+                            <th>Nombres</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Fecha y Hora</th>
+                            <th>Dirección</th>
+                            <th>Médico</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row">
+                            <td class="cell-id">001</td>
+                            <td class="cell-attention">AMB-2025-0001</td>
+                            <td class="cell-date">15/01/2025</td>
+                            <td class="cell-name">María Elena</td>
+                            <td class="cell-lastname">González</td>
+                            <td class="cell-mothername">Pérez</td>
+                            <td class="cell-datetime">15/01/2025 14:30</td>
+                            <td class="cell-address">Av. Arequipa 1245, Miraflores</td>
+                            <td class="cell-doctor">Dr. Carlos Mendoza</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">002</td>
+                            <td class="cell-attention">AMB-2025-0002</td>
+                            <td class="cell-date">16/01/2025</td>
+                            <td class="cell-name">José Luis</td>
+                            <td class="cell-lastname">Ramírez</td>
+                            <td class="cell-mothername">Castro</td>
+                            <td class="cell-datetime">16/01/2025 09:15</td>
+                            <td class="cell-address">Jr. Lampa 567, Cercado de Lima</td>
+                            <td class="cell-doctor">Dr. Ana Rodríguez</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">003</td>
+                            <td class="cell-attention">AMB-2025-0003</td>
+                            <td class="cell-date">18/01/2025</td>
+                            <td class="cell-name">Carmen Rosa</td>
+                            <td class="cell-lastname">Silva</td>
+                            <td class="cell-mothername">Vásquez</td>
+                            <td class="cell-datetime">18/01/2025 16:45</td>
+                            <td class="cell-address">Av. Brasil 890, Magdalena</td>
+                            <td class="cell-doctor">Dr. Miguel Torres</td>
+                            <td class="cell-status pending">Pendiente</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">004</td>
+                            <td class="cell-attention">AMB-2025-0004</td>
+                            <td class="cell-date">20/01/2025</td>
+                            <td class="cell-name">Roberto</td>
+                            <td class="cell-lastname">Fernández</td>
+                            <td class="cell-mothername">Castro</td>
+                            <td class="cell-datetime">20/01/2025 11:20</td>
+                            <td class="cell-address">Av. Javier Prado 2341, San Isidro</td>
+                            <td class="cell-doctor">Dr. Patricia López</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">005</td>
+                            <td class="cell-attention">AMB-2025-0005</td>
+                            <td class="cell-date">22/01/2025</td>
+                            <td class="cell-name">Elena Maritza</td>
+                            <td class="cell-lastname">Morales</td>
+                            <td class="cell-mothername">Díaz</td>
+                            <td class="cell-datetime">22/01/2025 08:30</td>
+                            <td class="cell-address">Jr. Camaná 123, Callao</td>
+                            <td class="cell-doctor">Dr. Fernando Gómez</td>
+                            <td class="cell-status emergency">Emergencia</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">006</td>
+                            <td class="cell-attention">AMB-2025-0006</td>
+                            <td class="cell-date">25/01/2025</td>
+                            <td class="cell-name">Alberto</td>
+                            <td class="cell-lastname">Sánchez</td>
+                            <td class="cell-mothername">Ruiz</td>
+                            <td class="cell-datetime">25/01/2025 13:45</td>
+                            <td class="cell-address">Av. Colonial 456, Pueblo Libre</td>
+                            <td class="cell-doctor">Dr. Lucía Herrera</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">007</td>
+                            <td class="cell-attention">AMB-2025-0007</td>
+                            <td class="cell-date">28/01/2025</td>
+                            <td class="cell-name">Rosa Amelia</td>
+                            <td class="cell-lastname">Jiménez</td>
+                            <td class="cell-mothername">Flores</td>
+                            <td class="cell-datetime">28/01/2025 10:15</td>
+                            <td class="cell-address">Av. Universitaria 789, Los Olivos</td>
+                            <td class="cell-doctor">Dr. Ricardo Vargas</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">008</td>
+                            <td class="cell-attention">AMB-2025-0008</td>
+                            <td class="cell-date">30/01/2025</td>
+                            <td class="cell-name">Manuel Eduardo</td>
+                            <td class="cell-lastname">Castro</td>
+                            <td class="cell-mothername">Quispe</td>
+                            <td class="cell-datetime">30/01/2025 15:30</td>
+                            <td class="cell-address">Jr. Huancavelica 234, Comas</td>
+                            <td class="cell-doctor">Dr. Adriana Moreno</td>
+                            <td class="cell-status pending">Pendiente</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">009</td>
+                            <td class="cell-attention">AMB-2025-0009</td>
+                            <td class="cell-date">02/02/2025</td>
+                            <td class="cell-name">Teresa Isabel</td>
+                            <td class="cell-lastname">Valdez</td>
+                            <td class="cell-mothername">Chávez</td>
+                            <td class="cell-datetime">02/02/2025 12:00</td>
+                            <td class="cell-address">Av. Túpac Amaru 567, Independencia</td>
+                            <td class="cell-doctor">Dr. Jaime Espinoza</td>
+                            <td class="cell-status emergency">Emergencia</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">010</td>
+                            <td class="cell-attention">AMB-2025-0010</td>
+                            <td class="cell-date">05/02/2025</td>
+                            <td class="cell-name">Pedro Alejandro</td>
+                            <td class="cell-lastname">Huamán</td>
+                            <td class="cell-mothername">Ríos</td>
+                            <td class="cell-datetime">05/02/2025 07:45</td>
+                            <td class="cell-address">Av. Grau 890, Villa El Salvador</td>
+                            <td class="cell-doctor">Dr. Sofía Delgado</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">011</td>
+                            <td class="cell-attention">AMB-2025-0011</td>
+                            <td class="cell-date">08/02/2025</td>
+                            <td class="cell-name">Claudia Patricia</td>
+                            <td class="cell-lastname">Herrera</td>
+                            <td class="cell-mothername">Mendoza</td>
+                            <td class="cell-datetime">08/02/2025 14:20</td>
+                            <td class="cell-address">Av. Petit Thouars 1234, San Isidro</td>
+                            <td class="cell-doctor">Dr. Eduardo Sánchez</td>
+                            <td class="cell-status completed">Completada</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="cell-id">012</td>
+                            <td class="cell-attention">AMB-2025-0012</td>
+                            <td class="cell-date">10/02/2025</td>
+                            <td class="cell-name">Andrés Felipe</td>
+                            <td class="cell-lastname">Romero</td>
+                            <td class="cell-mothername">García</td>
+                            <td class="cell-datetime">10/02/2025 16:15</td>
+                            <td class="cell-address">Jr. de la Unión 345, Cercado de Lima</td>
+                            <td class="cell-doctor">Dr. Mónica Castillo</td>
+                            <td class="cell-status pending">Pendiente</td>
+                            <td class="cell-actions">
+                                <button class="action-btn view-btn" title="Ver Detalle">👁️</button>
+                                <button class="action-btn edit-btn" title="Editar">✏️</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-container">
+                <div class="pagination-info">
+                    Mostrando 1-12 de 47 registros
+                </div>
+                <div class="pagination-controls">
+                    <button class="pagination-btn" disabled>« Anterior</button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">4</button>
+                    <button class="pagination-btn">Siguiente »</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

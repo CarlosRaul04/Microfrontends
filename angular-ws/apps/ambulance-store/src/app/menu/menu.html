@@ -1,0 +1,125 @@
+<div class="ambulance-store-container">
+    <header class="store-header">
+        <div class="header-content">
+            <div class="navigation-section">
+                <button class="back-btn" onclick="window.history.back()" title="Volver al Menú Principal">
+                    <span class="back-icon">←</span>
+                    <span class="back-text">Menú Principal</span>
+                </button>
+            </div>
+            <div class="logo-section">
+                <i class="fas fa-truck-medical"></i>
+                <div class="logo-text">
+                    <h1>Almacén Ambulancia</h1>
+                    <span>Sistema de Gestión de Inventario Médico</span>
+                </div>
+            </div>
+            <div class="user-info">
+                <span class="welcome-text">Panel de Administración</span>
+                <div class="user-avatar">👤</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="menu-grid">
+            <div class="menu-card stock-card">
+                <div class="card-header">
+                    <i class="fas fa-boxes"></i>
+                    <h2>Stock</h2>
+                </div>
+                <div class="card-content">
+                    <p>Gestión y control de existencias de materiales médicos y suministros</p>
+                    <ul class="feature-list">
+                        <li>Consulta de disponibilidad</li>
+                        <li>Niveles de stock mínimo</li>
+                        <li>Alertas de reposición</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-primary" routerLink="/stock">
+                        <i class="fas fa-arrow-right"></i>
+                        Acceder a Stock
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card inventory-card">
+                <div class="card-header">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h2>Inventario</h2>
+                </div>
+                <div class="card-content">
+                    <p>Registro y administración completa del inventario médico</p>
+                    <ul class="feature-list">
+                        <li>Catálogo de productos</li>
+                        <li>Ubicaciones y almacenes</li>
+                        <li>Vencimientos y lotes</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-primary" routerLink="/inventory">
+                        <i class="fas fa-arrow-right"></i>
+                        Acceder a Inventario
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-card kardex-card">
+                <div class="card-header">
+                    <i class="fas fa-file-alt"></i>
+                    <h2>Kardex</h2>
+                </div>
+                <div class="card-content">
+                    <p>Historial detallado de movimientos y transacciones de inventario</p>
+                    <ul class="feature-list">
+                        <li>Entradas y salidas</li>
+                        <li>Transferencias</li>
+                        <li>Reportes de movimientos</li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-primary" routerLink="/kardex">
+                        <i class="fas fa-arrow-right"></i>
+                        Acceder a Kardex
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-stats">
+            <div class="stat-item">
+                <i class="fas fa-chart-line"></i>
+                <div class="stat-content">
+                    <h3>Estado del Sistema</h3>
+                    <p>Todos los módulos operativos</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <div class="stat-content">
+                    <h3>Última Actualización</h3>
+                    <p>Hace 5 minutos</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <div class="stat-content">
+                    <h3>Usuarios Activos</h3>
+                    <p>12 operadores</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="store-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Sistema de Ambulancias - Módulo de Almacén</p>
+            <div class="footer-links">
+                <a href="#help">Ayuda</a>
+                <a href="#support">Soporte</a>
+                <a href="#docs">Documentación</a>
+            </div>
+        </div>
+    </footer>
+</div>
